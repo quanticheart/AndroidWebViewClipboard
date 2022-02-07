@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<body>
+<button type="button" onclick="testClipboard();">
+    Test Clipboard
+</button>
+<script>
+    function testClipboard() {
+  navigator.clipboard.writeText("Clipboard API Test").then(
+    v => alert("Success"),
+    e => alert("Fail\n" + e));
+      NativeAndroid.copyToClipboard("Clipboard API Test");
+}
+
+</script>
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+
+<script type="text/javascript">
+function showAndroidToast(toast) {
+NativeAndroid.showToast(toast);
+}
+</script>
+</body>
+</html>
