@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val myWebView: WebView = findViewById(R.id.webview)
         myWebView.settings.javaScriptEnabled = true
         myWebView.addJavascriptInterface(WebAppInterface(this), "Android")
-        myWebView.loadUrl("https://www.w3schools.com/howto/howto_js_copy_clipboard.asp")
+        myWebView.loadUrl("https://quanticheart.github.io/AndroidWebViewClipboard/")
         myWebView.addJavascriptInterface(WebAppInterface(this), "NativeAndroid")
 
     }
